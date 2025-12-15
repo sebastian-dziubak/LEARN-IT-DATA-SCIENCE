@@ -10,8 +10,10 @@ Użyj title case
 
 """
 
-raw_name = " PATIENT_age_YEARS "
+print('*** STANDARYZACJA NAZW KOLUMN ***\n')
+raw_name = input('Podaj nazwę kolumny do ustandaryzowania: ')
 
 new_name = raw_name.strip().title().replace("_", " ")
 
-print(new_name)
+print(f'Stara nazwa kolumny: "{raw_name}"')
+print(f'Ustandaryzowana nazwa kolumny: "{new_name}"')
