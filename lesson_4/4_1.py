@@ -12,11 +12,10 @@ Dodaj interpretację: BMI < 18.5 (niedowaga), 18.5-24.9 (norma), ≥25 (nadwaga)
 
 """
 
-waga = 70
-wzrost = 1.75
+waga = float(input('Podaj swoją wagę w [kg]: '))
+wzrost = float(input('Podaj swój wzrost w [m]: '))
 
 bmi = waga / (wzrost **2)
-interpretacja =''
 
 if 18.5 <= bmi <= 24.9:
     interpretacja = 'norma'
