@@ -6,7 +6,6 @@ Masz listę logów:logs = [
 "2024-01-15 11:05:01 INFO Retrying with smaller batch"
 ]
 Wyciągnij i zlicz poziomy logów (INFO, WARNING, ERROR). Oblicz % każdego poziomu.
-
 """
 
 logs = [
