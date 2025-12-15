@@ -11,14 +11,14 @@ Wyświetl rekomendację
 
 """
 
-acc_a = 0.87
-acc_b = 0.89
-train_time_a = 120
-train_time_b = 450
+acc_a = float(input('Podaj zbieżność modelu A w % '))
+train_time_a = int(input('Podaj czas szkolenia modelu A w sekundach:  '))
+acc_b = float(input('Podaj zbieżność modelu B w % '))
+train_time_b = int(input('Podaj czas szkolenia modelu B w sekundach: '))
 
 diff = abs(acc_a - acc_b)
 
-if round(diff, 2) <= 0.02:
+if round(diff, 2) <= 2:
     if train_time_a < train_time_b:
         recomendation = "Modele mają podobną zbieżność. Model A ma krótszy czas treningu. Wybrano model A"
     else:
@@ -31,11 +31,11 @@ else:
 
 print(f'''
 Model A:
-* accuracy: {acc_a * 100} %
+* accuracy: {acc_a:.2f} %
 * train time: {train_time_a} s
 
 Model B:
-* accuracy: {acc_b * 100} %
+* accuracy: {acc_b:.2f} %
 * train time: {train_time_b} s
 ''')
 print(f'Rekomendacja: {recomendation}')
