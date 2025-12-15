@@ -9,7 +9,7 @@ Wyświetl wszystkie 3 wartości sformatowane z 1 miejscem po przecinku
 
 """
 
-temp_c = 23.5
+temp_c = float(input('Podaj temperaturę w stopniach Celsjusza: '))
 temp_f = temp_c * 9/5 + 32
 temp_k = temp_c + 273.15
 
