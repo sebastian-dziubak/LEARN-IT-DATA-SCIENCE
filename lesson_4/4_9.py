@@ -2,7 +2,8 @@
 Zadanie 9 – Normalizacja Min-Max
 Znormalizuj wartość do zakresu [0, 1].
 Dane:
-Wartość: 75Minimum w kolumnie: 50
+Wartość: 75
+Minimum w kolumnie: 50
 Maximum w kolumnie: 100
 Wymagania:
 Wzór: normalized = (value - min) / (max - min)
