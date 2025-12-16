@@ -26,10 +26,6 @@ for value in values:
     else:
         value_in.append("NIE")
 
-print(values)
-print(value_normalized)
-print(value_in)
-
 print(f'{"Wartość oryginalna":<10}  | {"Wartość znormalizowana":<10} | {"Czy mieści się w [0, 1]":<10}')
 for i in range(len(values)):
     print('-' * 70)
