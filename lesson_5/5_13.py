@@ -57,8 +57,6 @@ for key, value in data.items():
             result[i].append(mean_len)
             result[i].append(len_wid)
 
-print(result)
-
 print(f'''
 {'RAPORT':<20} {unique_species[0].title():>20} {unique_species[1].title():>20} {unique_species[2].title():>20}
 {result_names[0].title():<25} {result[unique_species[0]][0]:>15} {result[unique_species[1]][0]:>20} {result[unique_species[2]][0]:>20}
